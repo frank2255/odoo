@@ -14,5 +14,10 @@
 ![image](https://github.com/user-attachments/assets/399f3cae-a033-4e0f-a287-851b1b7fe076)<br/><br/>
 ![image](https://github.com/user-attachments/assets/9b8747ac-8331-436d-be6c-c9e64d2feb8d)<br/><br/>
 
-修改account_move_send.py後,成功發送<br/><br/>
+對account_move_send.py d9 開頭添加的code<br/><br/>
+![image](https://github.com/user-attachments/assets/25fde662-51dc-4e89-81a9-8c8a9a19e5c1)<br/><br/>
+在方法action_send_and_print添加code<br/><br/>
+![image](https://github.com/user-attachments/assets/d9620410-092b-4d7f-bd4e-941da3c9b093)<br/><br/>
+
+存account_move_send.py後,點按鈕"發送與列印"成功對slack發送訊息<br/><br/>
 ![image](https://github.com/user-attachments/assets/0148c68d-f2f0-42a4-86b8-493ce03b276c)<br/><br/>
