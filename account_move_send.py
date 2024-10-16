@@ -734,16 +734,19 @@ class AccountMoveSend(models.TransientModel):
                 },
             }
 
+        # 從系統參數中讀取 Slack token
+        slack_token = self.env['ir.config_parameter'].sudo().get_param('slack_api_token')
+        
         # Slack API 呼叫
-        client = WebClient(token="xoxb-6404616183602-6924912957734-NnjHHItdzIDi6y6Hmb15y1H4")
+        client = WebClient(token=slack_token)
         logger = logging.getLogger(__name__)
-        channel_id = "C06GEJMJEEN"  # 目標頻道 ID
+        channelId = self.env['ir.config_parameter'].sudo().get_param('channel_id')
         
         try:
             # 發送 Slack 訊息
             slack_message = f"Account Move has been sent and printed."
             result = client.chat_postMessage(
-                channel=channel_id,
+                channel=channelId,
                 text=slack_message
             )
             logger.info(result)
