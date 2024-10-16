@@ -12,3 +12,5 @@
 打開編輯器後,主要以src/odoo/addons 做編寫及修改<br/><br/>
 ![image](https://github.com/user-attachments/assets/1a5279e2-7a5b-49ab-81a8-c161d2f9afd9)<br/><br/>
 
+# 在odoo.sh上設定系統參數<br/>
+![image](https://github.com/user-attachments/assets/23038a5c-55a0-4b24-89cf-5766ced5d478)<br/><br/>
